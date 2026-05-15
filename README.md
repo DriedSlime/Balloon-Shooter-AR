@@ -29,3 +29,5 @@ Assets/
     ├── Arrow.prefab           # Rigidbody와 물리 충돌체가 세팅된 화살 오브젝트
     ├── DetectedPlane.prefab   # 평면 바닥을 탐지할 시 생성될 바닥 오브젝
     └── Balloon_~.prefab       # 반투명 고무 셰이더가 적용된 풍선 오브젝트
+
+<img width="1080" height="2400" alt="화면캡쳐1" src="https://github.com/user-attachments/assets/f5163d21-d100-4dbd-b983-aa4486d55182" />
