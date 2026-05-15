@@ -34,7 +34,7 @@ Assets/
 <img width="216" height="480" alt="화면캡쳐3" src="https://github.com/user-attachments/assets/7580e0cd-8494-4fe1-8351-2de34bae9334" />
 
 ### 화면 터치 시 화살 발사
-<img width="216" height="480" alt="화면캡쳐1" src="https://github.com/user-attachments/assets/f5163d21-d100-4dbd-b983-aa4486d55182" / ㅁㅁㅁㅁㅁㅁㅁㅁ>
+<img width="216" height="480" alt="화면캡쳐1" src="https://github.com/user-attachments/assets/f5163d21-d100-4dbd-b983-aa4486d55182" />ㅁㅁㅁㅁㅁ
 
 ### 풍선 적중 시 점수 획득
 <img width="216" height="480" alt="화면캡쳐2" src="https://github.com/user-attachments/assets/116af0ff-276b-4652-a15c-d79c5c9f15d8" />
