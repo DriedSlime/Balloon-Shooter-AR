@@ -18,39 +18,15 @@ public class ArrowShooter : MonoBehaviour
 
     private Animator anim;
     private ARRaycastManager arRaycastManager;
-    private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     void Awake()
     {
-        arRaycastManager = GetComponent<ARRaycastManager>();
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // 1. 조준점(Reticle) 위치 업데이트 (선택사항)
-        UpdateReticle();
-
         SetCrossbowLook();
-    }
-
-    void UpdateReticle()
-    {
-        if (reticlePrefab == null || arRaycastManager == null) return;
-
-        // 화면 중앙에서 레이를 쏩니다.
-        Vector2 screenCenter = new Vector2(Screen.width / 2, Screen.height / 2);
-        if (arRaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon))
-        {
-            Pose hitPose = hits[0].pose;
-            reticlePrefab.transform.position = hitPose.position;
-            reticlePrefab.transform.rotation = hitPose.rotation;
-            reticlePrefab.SetActive(true); // 벽이 인식되면 조준점 표시
-        }
-        else
-        {
-            reticlePrefab.SetActive(false); // 벽이 없으면 조준점 숨김
-        }
     }
 
     void SetCrossbowLook()
@@ -68,7 +44,7 @@ public class ArrowShooter : MonoBehaviour
 
     public void OnFire(InputAction.CallbackContext context)
     {
-        // 'Started'는 터치가 시작되는 순간 딱 한 번 실행됩니다.
+        // 'Started'는 터치가 시작되는 순간 딱 한 번 실행
         if (context.started)
         {
             if (Time.time >= nextFireTime)
